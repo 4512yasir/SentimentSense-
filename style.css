@@ -1,1 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f0f0f0; 
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+header{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #fdf6ec;
 
+}
+.input{
+  margin: 20px;
+  padding: 20px;
+  display: flex; 
+  align-items: center;
+}
+input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)  ;
+    margin-right: 10px;
+}
+#button{
+    background-color: #007bff; /* Prominent background color (blue) */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+#button:hover{
+    background-color: #00b351; /* Darker blue on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+@media (max-width: 768px) {
+    .input {
+      flex-direction: column; /* Stack input and button vertically */
+      align-items: stretch; /* Allow items to stretch to the container's width */
+    }
+  
+    .input input {
+      margin-right: 0; /* Remove right margin on small screens */
+      margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+  }
+
+  .display{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:20px ;
+    width: 100%;
+    
+  }
